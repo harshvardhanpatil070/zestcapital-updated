@@ -224,6 +224,7 @@ export default function Navbar() {
               {language}
             </button>
           </div>
+          
         </motion.div>
       )}
     </>

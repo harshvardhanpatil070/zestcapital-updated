@@ -10,7 +10,7 @@ const TradeWithConfidence = () => {
       <motion.div 
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
+        transition={{ duration: 0.8 }}
         className="relative z-10 max-w-5xl mx-auto text-center"
       >
         <h2 className="text-4xl md:text-5xl font-extrabold tracking-wide bg-gradient-to-r from-[#0C056D] to-[#433bff] text-transparent bg-clip-text animate-pulse">
@@ -31,28 +31,46 @@ const TradeWithConfidence = () => {
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
-          whileHover={{ scale: 1.05, boxShadow: "0px 0px 30px rgba(12, 5, 109, 0.3)" }}
+          transition={{ duration: 1 }}
+          whileHover={{ 
+            scale: 1.05, 
+            boxShadow: "0px 0px 30px rgba(12, 5, 109, 0.3)",
+            transition: { duration: 0.3, ease: "easeOut" }
+          }}
           className="relative w-full md:w-1/2 bg-[#dedcff]/80 backdrop-blur-md rounded-3xl p-8 text-center shadow-lg border border-[#dedcff] hover:border-[#0C056D] transition-all duration-300"
         >
           <h3 className="text-2xl font-semibold mb-3 text-[#0C056D]">
             USDT/C Pairs Trading
           </h3>
           <p className="text-sm opacity-80">
-            Trade Indices, Commodities, and more against USDT,tightest spread in world.
+            Trade Indices, Commodities, and more against USDT
           </p>
-          <p className="text-sm opacity-80 mt-1">Leveraged Trading up to 200:1</p>
-          <button className="mt-6 bg-[#0C056D] px-6 py-2 rounded-lg text-white font-semibold shadow-md hover:bg-[#433bff] transition-all">
-          Download App
-          </button>
+          <p className="text-sm opacity-80 mt-1">
+            tightest spread in world.
+          </p>
+          <p className="text-sm opacity-80 mt-1">
+            Leveraged Trading up to 200:1
+          </p>
+          <div className="mt-6 flex justify-center gap-4">
+            <button className="bg-[#0C056D] px-6 py-2 rounded-lg text-white font-semibold shadow-md hover:bg-[#433bff] transition-all">
+              Download Android
+            </button>
+            <button className="bg-[#0C056D] px-6 py-2 rounded-lg text-white font-semibold shadow-md hover:bg-[#433bff] transition-all">
+              Download iOS
+            </button>
+          </div>
         </motion.div>
 
         {/* Multi-Asset Crypto Account Card */}
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
-          whileHover={{ scale: 1.05, boxShadow: "0px 0px 30px rgba(67, 59, 255, 0.3)" }}
+          transition={{ duration: 1 }}
+          whileHover={{ 
+            scale: 1.05, 
+            boxShadow: "0px 0px 30px rgba(67, 59, 255, 0.3)",
+            transition: { duration: 0.3, ease: "easeOut" }
+          }}
           className="relative w-full md:w-1/2 bg-[#dedcff]/80 backdrop-blur-md rounded-3xl p-8 text-center shadow-lg border border-[#dedcff] hover:border-[#433bff] transition-all duration-300"
         >
           <h3 className="text-2xl font-semibold mb-3 text-[#433bff]">
@@ -61,9 +79,14 @@ const TradeWithConfidence = () => {
           <p className="text-sm opacity-80">Crypto Spot Market</p>
           <p className="text-sm opacity-80">Crypto Derivatives</p>
           <p className="text-sm opacity-80">Crypto Futures</p>
-          <button className="mt-6 bg-[#433bff] px-6 py-2 rounded-lg text-white font-semibold shadow-md hover:bg-[#0C056D] transition-all">
-            Download App
-          </button>
+          <div className="mt-6 flex justify-center gap-4">
+            <button className="bg-[#433bff] px-6 py-2 rounded-lg text-white font-semibold shadow-md hover:bg-[#0C056D] transition-all">
+              Download Android
+            </button>
+            <button className="bg-[#433bff] px-6 py-2 rounded-lg text-white font-semibold shadow-md hover:bg-[#0C056D] transition-all">
+              Download iOS
+            </button>
+          </div>
         </motion.div>
       </div>
     </section>
